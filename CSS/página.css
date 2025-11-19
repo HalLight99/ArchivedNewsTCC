@@ -1,0 +1,181 @@
+body {
+background-color: #ffffff; /* Fundo branco */
+color: #000000; /* Texto preto */
+font-family: Arial, sans-serif;
+margin: 0;
+transition: background 0.3s, color 0.3s;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ribeye&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* Modo escuro aplicado via JavaScript */
+body.dark-mode {
+background-image: url('background.png');
+color: #e3e3e3;
+
+  /* Centraliza o conteúdo na horizontal (eixo principal) */
+  justify-content: center;
+
+  /* Centraliza o conteúdo na vertical (eixo transversal) */
+  align-items: center;
+
+  /* Garante que o body ocupe a altura total da viewport */
+  min-height: 100vh;
+
+  /* Opcional: Remove margem padrão do navegador */
+  margin: 0;
+}
+
+
+/* Manter o section igual no dark mode */
+body.dark-mode section {
+background-image: url('tecnologia\ para\ divisão.png'); /* mesma cor do modo claro */
+color: #e3e3e3; /* texto padrão dentro da section */}
+
+body.dark-mode .texto-noticia {
+    background-color: #333; /* Uma cor de fundo mais escura (cinza escuro) */
+    color: #e3e3e3; /* Mantém o texto claro */
+    padding: 15px; /* Adiciona um pequeno padding para destacar a div */
+    border-radius: 8px; /* Opcional: bordas arredondadas */
+}
+
+header {
+background-image: url('menu.png'); /* Azul profissional */
+color: white;
+padding: 20px 10px 20px 10px;
+text-align: center;
+box-shadow: 0 0 15px rgba(0,0,0,0.3);
+/*código da fonte-google*/ 
+font-family: "Ribeye", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav ul {
+display: flex;
+justify-content: center;
+gap: 25px;
+list-style: none;
+padding: 15px;
+margin: 15px 0;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+transition: opacity 0.3s;
+}
+
+nav ul li a:hover {
+opacity: 0.7;
+}
+
+section {
+background-color: #f1f1f1; /* Cinza suave para caixas */
+margin: 25px auto;
+padding: 20px;
+width: 90%;
+max-width: 1000px;
+box-shadow: 0 0 8px rgba(0,0,0,0.2);
+border-radius: 5px;
+border: 2px solid blue;
+font-family: "SUSE Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weigh;
+  font-style: normal;
+}
+
+section h3 {
+color: #095be0; /* Azul para títulos de destaque */
+}
+
+div {
+    padding: 10px;
+}
+
+/* Ajuste de textos */
+h1, h2, p {
+text-align: center;
+}
+
+#darkModeBtn {
+position: fixed;
+bottom: 20px;
+right: 20px;
+padding: 10px 18px;
+border: none;
+border-radius: 6px;
+background-color: #095be0;
+color: white;
+font-weight: bold;
+cursor: pointer;
+box-shadow: 0 0 10px rgba(0,0,0,0.3);
+transition: 0.3s;
+}
+
+#darkModeBtn:hover {
+opacity: 0.8;
+}
+
+#btnTopo {
+display: none; /* só aparece com scroll */
+position: fixed;
+bottom: 70px;
+right: 20px;
+padding: 10px 15px;
+background-color: #333;
+color: white;
+border-radius: 50%;
+border: none;
+cursor: pointer;
+font-size: 20px;
+box-shadow: 0 0 10px rgba(0,0,0,0.4);
+transition: 0.3s;
+}
+
+
+#btnTopo:hover {
+background-color: #555;
+}
+
+.noticia {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Card de notícia */
+.texto-noticia {
+    width: 100%;
+    max-width: 320px; /* Responsivo */
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    transition: 0.3s ease;
+}
+
+/* Imagem da notícia */
+.texto-noticia-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Texto da notícia */
+.texto-noticia-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Efeito hover */
+.texto-noticia:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
