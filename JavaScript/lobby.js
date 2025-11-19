@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   const link = document.getElementById('linkAnimado');
-  const urlDeDestino = 'file:///C:/Users/halef/Desktop/ArhivedNews%20TCC%20v0.0/Projeto/página.html'; // **Defina o URL real aqui**
+  const urlDeDestino = 'página.html'; // **Define o destino ao clicar**
 
   link.addEventListener('click', function(event) {
     // 1. Previne o comportamento padrão (navegar imediatamente)
