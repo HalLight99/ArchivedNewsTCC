@@ -1,0 +1,38 @@
+/* Define a animação de clique (exemplo: encolhe e volta rapidamente) */
+@keyframes clique-animacao {
+  0% { transform: scale(1); }      /* Tamanho normal */
+  50% { transform: scale(0.95); }  /* Encolhe um pouco */
+  100% { transform: scale(1); }    /* Volta ao normal */
+}
+
+/* Classe que aplica a animação ao link/imagem */
+.animacao-clique img {
+  /* Aplica a animação: nome, duração (0.5s), função de temporização (ease-out), número de repetições (1) */
+  animation: clique-animacao 0.5s ease-out 1;
+}
+
+/* Opcional: Efeito visual ao passar o mouse */
+#linkAnimado img {
+  transition: transform 0.2s ease; /* Transição suave para efeitos (ex: hover) */
+  cursor: pointer;
+}
+
+body {
+    background-image: url('lobby\ background.png'); /*imagem de fundo*/
+ 
+    /* Habilita o modo Flexbox */
+  display: flex;
+
+  /* Centraliza o conteúdo na horizontal (eixo principal) */
+  justify-content: center;
+
+  /* Centraliza o conteúdo na vertical (eixo transversal) */
+  align-items: center;
+
+  /* Garante que o body ocupe a altura total da viewport */
+  min-height: 100vh;
+
+  /* Opcional: Remove margem padrão do navegador */
+  margin: 0;
+}
+
